@@ -15,6 +15,7 @@ public class NaiveTransactionLogic implements TransactionLogic {
         this.stockAnalyst = stockAnalyst;
     }
 
+    @Override
     public Action recommendedAction(final String id) {
 
         final Expectation branchPerspective = stockAnalyst.branchPerspective(id);
