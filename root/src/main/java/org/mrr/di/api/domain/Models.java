@@ -8,4 +8,5 @@ public class Models {
 
     public enum TransactionIndicator {OVER_SOLD, OVER_BOUGHT, REGULAR}
 
+    public enum Volatility { LOW, NORMAL, HIGH}
 }
