@@ -22,6 +22,6 @@ public class NaiveTransactionLogic implements TransactionLogic {
         final Expectation companyPerspective = stockAnalyst.companyPerspective(id);
         final TransactionIndicator transactionIndicator = stockAnalyst.transactionIndicator(id);
 
-        return TransactionDecisionCore.STOCK_ACTION.apply(branchPerspective, companyPerspective, transactionIndicator);
+        return TransactionDecisionCore.STOCK_DECISION.apply(branchPerspective, companyPerspective, transactionIndicator);
     }
 }

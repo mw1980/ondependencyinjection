@@ -6,7 +6,7 @@ import org.mrr.di.api.domain.Models.Action;
 
 public class TransactionDecisionCore {
 
-    public static final Function3<Models.Expectation, Models.Expectation, Models.TransactionIndicator, Action> STOCK_ACTION =
+    public static final Function3<Models.Expectation, Models.Expectation, Models.TransactionIndicator, Action> STOCK_DECISION =
             (branchPerspective, companyPerspective, transactionIndicator) -> {
                 if (branchPerspective == Models.Expectation.POSITIVE
                         && companyPerspective == Models.Expectation.POSITIVE

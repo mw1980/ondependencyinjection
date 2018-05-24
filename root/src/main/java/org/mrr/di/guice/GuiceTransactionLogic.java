@@ -21,6 +21,6 @@ public class GuiceTransactionLogic implements TransactionLogic {
         final Models.Expectation companyPerspective = stockAnalyst.companyPerspective(id);
         final Models.TransactionIndicator transactionIndicator = stockAnalyst.transactionIndicator(id);
 
-        return TransactionDecisionCore.STOCK_ACTION.apply(branchPerspective, companyPerspective, transactionIndicator);
+        return TransactionDecisionCore.STOCK_DECISION.apply(branchPerspective, companyPerspective, transactionIndicator);
     }
 }
