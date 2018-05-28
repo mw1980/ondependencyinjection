@@ -16,7 +16,7 @@ public class SampleDataEngine {
         // prevent instantiation
     }
 
-    static final Supplier<Expectation> RANDOM_EXPECTATION_SUPPLIER = () -> {
+    public static final Supplier<Expectation> RANDOM_EXPECTATION_SUPPLIER = () -> {
         int value = new Random().nextInt(3);
         if (value == 0) {
             return Expectation.POSITIVE;
@@ -27,7 +27,7 @@ public class SampleDataEngine {
         }
     };
 
-    static final Supplier<TransactionIndicator> RANDOM_TRANSACTION_INDICATOR_SUPPLIER = () -> {
+    public static final Supplier<TransactionIndicator> RANDOM_TRANSACTION_INDICATOR_SUPPLIER = () -> {
         int value = new Random().nextInt(3);
         if (value == 0) {
             return TransactionIndicator.OVER_BOUGHT;
@@ -54,7 +54,7 @@ public class SampleDataEngine {
                 }
             };
 
-    static final Supplier<Volatility> RANDOM_VOLATILITY_SUPPLIER = () -> {
+    public static final Supplier<Volatility> RANDOM_VOLATILITY_SOURCE = () -> {
         int value = new Random().nextInt(3);
         if (value == 0) {
             return Volatility.LOW;
